@@ -57,7 +57,7 @@ pipeline{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
                        sh "docker build -t tetrisv1 ."
                        sh "docker tag tetrisv1 venkateshchamakuri/venky:latest"
-                       sh "docker push aiworklabs/workshop:latest"
+                       sh "docker push venkateshchamakuri/venky:latest"
                     }
                 }
             }
